@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+
+<body>
+   <div class="container">
+        <h1>Dice Roller</h1>
+         <p>Click the Roll button or press Enter to roll the dice.</p>
+
+        <div class="dice-container">
+            <div class="dice" id="die1">
+                <div class="face front">
+                    <img src="diceFace1.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face bottom">
+                    <img src="diceFace2.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face right">
+                    <img src="diceFace3.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face left">
+                    <img src="diceFace4.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face top">
+                    <img src="diceFace5.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face back">
+                    <img src="diceFace6.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+            </div>
+            <div class="dice" id="die2">
+                <div class="face front">
+                    <img src="diceFace1.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face bottom">
+                    <img src="diceFace2.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face right">
+                    <img src="diceFace3.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face left">
+                    <img src="diceFace4.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face top">
+                    <img src="diceFace5.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+                <div class="face back">
+                    <img src="diceFace6.jpg" alt="diceFaceTemp.jpg" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+                <label for="result1">Die 1:</label>
+                <input type="text" id="result1" readonly>
+                <label for="result2">Die 2:</label>
+                <input type="text" id="result2" readonly>
+        </div>
+
+        <button id="rollButton">ROLL</button>
+   </div>
+
+   <script src="dice.js"></script>
+</body>
+</html>

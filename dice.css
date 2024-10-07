@@ -1,0 +1,66 @@
+body {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.results {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 50px;
+    text-align: right;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin-bottom: 30px;
+    perspective: 4000px;
+}
+
+.dice {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+    transition: transform 1s ease;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {transform: translateZ(100px);}
+.back {transform: rotateY(180deg) translateZ(100px);}
+.left {transform: rotateY(-90deg) translateZ(100px);}
+.right {transform: rotateY(90deg) translateZ(100px);}
+.top {transform: rotateX(90deg) translateZ(100px);}
+.bottom {transform: rotateX(-90deg) translateZ(100px);}
